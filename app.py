@@ -20,12 +20,12 @@ if st.button("FIND THE WORD"):
     for word in word_list:
     # Trim any extra spaces from the word
         word = word.strip()
-        if word:  # Check if the word is not an empty string
+        if word!="Cannot find relevant words. Please specify your description.":  # Check if the word is not an empty string
             # Format the URL with the word
             dictionary_url = f"https://www.oxfordlearnersdictionaries.com/definition/english/{word}?q={word}"
             # Create a Markdown link with the word as the hyperlink text
             st.markdown(f"[{word}]({dictionary_url})")
 
         else:
-            st.write("Cannot find relevant words. Please specify your description.")
+            st.write(word)
         
