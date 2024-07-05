@@ -1,6 +1,5 @@
 import streamlit as st
 from langchain_google_genai import GoogleGenerativeAI
-from getpass import getpass
 
 api_key = "AIzaSyAJ0zuUGLSTMn7i3Uc-9vaMy_ks8IZ53vU"
 llm = GoogleGenerativeAI(model="gemini-pro", google_api_key=api_key)
